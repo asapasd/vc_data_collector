@@ -1,0 +1,32 @@
+# This is a TOML document.
+
+# set use logic processor number
+SetProcsNum = 4
+
+# set web server port&url
+SetPort = ":1000"
+SetURL = "/data_collect/"
+
+# set output directory
+FileDir = "C:\\json"
+
+# set model_cd
+ModelCode = "KK09"
+SiteCode = "NSTD" 
+FactoryCode = "M-1"
+LineCode = ["L01","L02","L03","L04","L05","L06","L07","L08","L09","L10","L90","L91"]
+
+# set length of serial string
+SerialLength = 17
+
+# set ASSY use which process_cd
+[AssyProcess]
+COVER = ["AE-1","AE-2","CNTRS"]
+BASE = ["AE-4","AE-5","AE-6","BNTRS"]
+CAGE = ["AE-30","AE-32","AE-33"]
+INNER = ["AE-16_03IN"]
+TUB = ["AE-16_04HB"]
+TAB = ["AE-16_07JT"]
+HOTBAR = ["AE-16_08MH"]
+FINAL = ["AE-15"]
+
