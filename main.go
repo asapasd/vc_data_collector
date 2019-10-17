@@ -253,7 +253,10 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 			fPath := filepath.Join(c.FileDir, chkFname)
 			mylib.CreateJSONfile(fPath, jsonByteData)
 			// POST返信
-			w.Write([]byte(`{"status":"` + chkResult + `", "message": "` + chkFname + "=" + chkMessage + `"}`))
+			content := `{"status":"` + chkResult + `", "message": "` + chkFname + "=" + chkMessage + `"}`
+			w.Write([]byte(content))
+			// 生成したJSONファイルをLOGに記録
+			mylib.DoLog(content)
 		}
 	} else {
 		// 405
@@ -301,6 +304,14 @@ func main() {
 		}
 	}
 	fmt.Println("# JSON Output dir=" + c.FileDir)
+
+	// LOG文件夹存在确认
+	if _, err := os.Stat("./log"); os.IsNotExist(err) {
+		// path does not exist
+		if err := os.MkdirAll("./log", 0777); err != nil {
+			log.Fatal(err)
+		}
+	}
 
 	// 显示现在的时间
 	st := time.Now()

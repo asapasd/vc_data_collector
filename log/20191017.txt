@@ -1,0 +1,3 @@
+2019/10/17 14:07:52 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017140752.118948.json=file created"}
+2019/10/17 14:10:18 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017141018.538886.json=file created"}
+14:16:15.303318 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017141615.300327.json=file created"}
