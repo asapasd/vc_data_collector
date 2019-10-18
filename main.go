@@ -208,8 +208,12 @@ func checkJSON(c Config, key string, d interface{}) (result string, fname string
 
 // helloWorld 子函数
 func helloWorld(w http.ResponseWriter, r *http.Request) {
+	var content string
+	
 	//if r.URL.Path != ""
-	fmt.Printf("### client=%s / accept=%s / method=%s\n", r.RemoteAddr, r.Header.Get("Accept"), r.Method)
+	content = "client=" + r.RemoteAddr + ", time=" + time.Now().Format("2006-01-02 15:04:05") + ", accept=" + r.Header.Get("Accept") + ", method=" + r.Method
+	//fmt.Println(content)
+	mylib.LogAccess(content)
 
 	// 响应不同类型的内容
 	switch r.Header.Get("Accept") {
@@ -243,20 +247,20 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 		for key, val := range j {
 			// Check JSON
 			chkResult, chkFname, chkMessage := checkJSON(c, key, val)
-			fmt.Printf("%v=%v, %v=%v\n", key, chkResult, chkFname, chkMessage)
+			//fmt.Printf("%v=%v, %v=%v\n", key, chkResult, chkFname, chkMessage)
+			content = `{"status":"` + chkResult + `", "message": "` + chkFname + "=" + chkMessage + `"}`
 			if chkResult != "OK" {
 				// POST返信
-				w.Write([]byte(`{"status":"` + chkResult + `", "message": "` + chkFname + "=" + chkMessage + `"}`))
+				w.Write([]byte(content))
+				mylib.LogRefuse(content)
 				return
 			}
 			// JSON文件生成
 			fPath := filepath.Join(c.FileDir, chkFname)
 			mylib.CreateJSONfile(fPath, jsonByteData)
 			// POST返信
-			content := `{"status":"` + chkResult + `", "message": "` + chkFname + "=" + chkMessage + `"}`
 			w.Write([]byte(content))
-			// 生成したJSONファイルをLOGに記録
-			mylib.DoLog(content)
+			mylib.LogJSON(content)
 		}
 	} else {
 		// 405

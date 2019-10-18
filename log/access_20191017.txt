@@ -1,0 +1,36 @@
+# OS=linux / architecture=amd64
+# Current dir=/root/go/src/github.com/asapasd/vc_data_collector
+# Use 2/32 logic processors
+# JSON Output dir=/tmp/json
+--> Start at 2019-10-17 20:38:36, port=:1000, url=/data_collect/
+
+20:39:32.612022 ### client=192.168.100.46:61299, time=2019-10-17 20:39:32, accept=application/json, method=POST
+20:40:32.931675 ### client=192.168.100.46:61313, time=2019-10-17 20:40:32, accept=application/json, method=POST
+20:41:26.708858 ### client=192.168.100.46:61326, time=2019-10-17 20:41:26, accept=application/json, method=PUT
+20:41:56.986492 ### client=192.168.100.46:61332, time=2019-10-17 20:41:56, accept=application/json, method=POST
+# OS=linux / architecture=amd64
+# Current dir=/root/go/src/github.com/asapasd/vc_data_collector
+# Use 2/32 logic processors
+# JSON Output dir=/tmp/json
+--> Start at 2019-10-17 20:47:54, port=:1000, url=/data_collect/
+
+# OS=linux / architecture=amd64
+# Current dir=/root/go/src/github.com/asapasd/vc_data_collector
+# Use 2/32 logic processors
+# JSON Output dir=/tmp/json
+--> Start at 2019-10-17 20:51:56, port=:1000, url=/data_collect/
+
+### client=192.168.100.46:61418, time=2019-10-17 20:52:05, accept=application/json, method=POST
+20:52:05.154225 ### client=192.168.100.46:61418, time=2019-10-17 20:52:05, accept=application/json, method=POST
+### client=192.168.100.46:61419, time=2019-10-17 20:52:08, accept=application/json, method=PUT
+20:52:08.628662 ### client=192.168.100.46:61419, time=2019-10-17 20:52:08, accept=application/json, method=PUT
+### client=192.168.100.46:61421, time=2019-10-17 20:52:12, accept=application/json, method=POST
+20:52:12.926674 ### client=192.168.100.46:61421, time=2019-10-17 20:52:12, accept=application/json, method=POST
+# OS=linux / architecture=amd64
+# Current dir=/root/go/src/github.com/asapasd/vc_data_collector
+# Use 2/32 logic processors
+# JSON Output dir=/tmp/json
+--> Start at 2019-10-17 20:55:40, port=:1000, url=/data_collect/
+
+20:55:51.189348 client=192.168.100.46:61447, time=2019-10-17 20:55:51, accept=application/json, method=POST
+20:57:19.006283 client=192.168.100.46:61462, time=2019-10-17 20:57:19, accept=application/json, method=POST

@@ -1,0 +1,2 @@
+20:41:56.986873 {"status":"NG", "message": "GH912345678912345=datatype_id & process_cd unmatch"}
+20:52:05.154832 {"status":"NG", "message": "GH912345678912345=datatype_id & process_cd unmatch"}

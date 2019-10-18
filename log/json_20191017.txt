@@ -1,0 +1,5 @@
+20:39:32.612680 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017203932.612418.json=file created"}
+20:40:32.931959 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017204032.931839.json=file created"}
+20:52:12.927048 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017205212.926893.json=file created"}
+20:55:51.190125 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017205551.189912.json=file created"}
+20:57:19.006964 {"status":"OK", "message": "sendResultDetails_KK09NSTDM-1L01AE-4_GH912345678912345_20191017205719.006746.json=file created"}

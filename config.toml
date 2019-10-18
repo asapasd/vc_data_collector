@@ -8,7 +8,7 @@ SetPort = ":1000"
 SetURL = "/data_collect/"
 
 # set output directory
-FileDir = "C:\\json"
+FileDir = "/tmp/json"
 
 # set model_cd
 ModelCode = "KK09"
